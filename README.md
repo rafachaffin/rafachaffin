@@ -1,16 +1,37 @@
-### Hi there 👋
+<script>
+  function copiarTexto() {
+    // Define o texto a ser copiado
+    var texto = "rafachaffin";
 
-<!--
-**rafachaffin/rafachaffin** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+    // Cria um elemento de texto temporário
+    var tempInput = document.createElement("input");
 
-Here are some ideas to get you started:
+    // Define o valor do elemento de texto como o texto desejado
+    tempInput.value = texto;
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+    // Adiciona o elemento de texto temporário ao corpo do documento
+    document.body.appendChild(tempInput);
+
+    // Seleciona o texto no elemento de texto temporário
+    tempInput.select();
+
+    // Copia o texto selecionado para a área de transferência
+    document.execCommand("copy");
+
+    // Remove o elemento de texto temporário
+    document.body.removeChild(tempInput);
+
+    // Alerta o usuário que o texto foi copiado
+    alert("Texto copiado: " + texto);
+  }
+</script>
+
+## Olá! Eu sou o Rafa Chaffin. 🖐🏻
+### Seja bem-vindo ao meu perfil!
+Sou um estudande de Ciência da Computação na UFRJ e tenho interesse na área Data Science e IA. 
+
+### Contato
+<div style="display: inline_block"></br>
+    <img align="center" alt="discord" src="https://img.shields.io/badge/Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white
+    "onclick="copiarTexto()" style="cursor:pointer;"/>
+</div>
